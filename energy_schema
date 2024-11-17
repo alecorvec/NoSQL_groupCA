@@ -1,0 +1,17 @@
+{
+    id: number,
+    name: string,
+    rating : {
+        current: string,
+        previous: string,
+        indicator: number
+    },
+    consumption : {
+        total: float,
+        kgco2_indicator: float,
+        heating_kwh: float,
+        electricity_kwh: float
+    }
+    valid_until: Date
+    year: number
+}

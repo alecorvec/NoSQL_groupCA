@@ -1,0 +1,452 @@
+## USE CORRECT DB
+
+use groupCA
+
+## INSERT ENERGY DOCUMENTS
+
+db.energy.insertMany([
+    {
+        "id": 852,
+        "name": "Civic Offices",
+        "rating": {
+            "current": "E1",
+            "previous": "E1",
+            "indicator": 100
+        },
+        "consumption": {
+            "total": 40862,
+            "kgco2_indicator": 106.09,
+            "heating_kwh": 85.41,
+            "electricity_kwh": 215.68,
+            "typical_kwh": 286.42
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 17,
+        "name": "Tara Street Fire Station",
+        "rating": {
+            "current": "D2",
+            "previous": "D2",
+            "indicator": 87.5
+        },
+        "consumption": {
+            "total": 5571,
+            "kgco2_indicator": 99.08,
+            "heating_kwh": 199.98,
+            "electricity_kwh": 287.78,
+            "typical_kwh": 500.6
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 1198,
+        "name": "Ballymun Leisure Centre",
+        "rating": {
+            "current": "C3",
+            "previous": "B3",
+            "indicator": 67
+        },
+        "consumption": {
+            "total": 4508,
+            "kgco2_indicator": 68.94,
+            "heating_kwh": 819.44,
+            "electricity_kwh": 181.55,
+            "typical_kwh": 1435.62
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 1200,
+        "name": "Ballyfermot Leisure Centre",
+        "rating": {
+            "current": "C2",
+            "previous": "B3",
+            "indicator": 58.5
+        },
+        "consumption": {
+            "total": 4429,
+            "kgco2_indicator": 58.08,
+            "heating_kwh": 589.48,
+            "electricity_kwh": 104.55,
+            "typical_kwh": 1183.42
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 16,
+        "name": "O'Brien Institute",
+        "rating": {
+            "current": "E2",
+            "previous": "F",
+            "indicator": 112.5
+        },
+        "consumption": {
+            "total": 3666,
+            "kgco2_indicator": 120.41,
+            "heating_kwh": 290.11,
+            "electricity_kwh": 231.22,
+            "typical_kwh": 434.04
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 736,
+        "name": "Pearse Street Library",
+        "rating": {
+            "current": "C2",
+            "previous": "C1",
+            "indicator": 58.5
+        },
+        "consumption": {
+            "total": 3535,
+            "kgco2_indicator": 61.22,
+            "heating_kwh": 93.76,
+            "electricity_kwh": 187.1,
+            "typical_kwh": 465.08
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 1197,
+        "name": "Finglas Leisure Centre",
+        "rating": {
+            "current": "D1",
+            "previous": "C1",
+            "indicator": 75
+        },
+        "consumption": {
+            "total": 2690,
+            "kgco2_indicator": 76.75,
+            "heating_kwh": 870.93,
+            "electricity_kwh": 285.01,
+            "typical_kwh": 1500.95
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 1406,
+        "name": "Poppintree Community Sports Centre",
+        "rating": {
+            "current": "B3",
+            "previous": "B3",
+            "indicator": 42
+        },
+        "consumption": {
+            "total": 2513,
+            "kgco2_indicator": 45.59,
+            "heating_kwh": 143.23,
+            "electricity_kwh": 69.33,
+            "typical_kwh": 455.73
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 1195,
+        "name": "Cabra Parkside Sports Centre",
+        "rating": {
+            "current": "B2",
+            "previous": "B2",
+            "indicator": 33.5
+        },
+        "consumption": {
+            "total": 2256,
+            "kgco2_indicator": 39.51,
+            "heating_kwh": 106.32,
+            "electricity_kwh": 116.27,
+            "typical_kwh": 569.63
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 850,
+        "name": "City Hall",
+        "rating": {
+            "current": "D2",
+            "previous": "D2",
+            "indicator": 87.5
+        },
+        "consumption": {
+            "total": 2051,
+            "kgco2_indicator": 94.1,
+            "heating_kwh": 205.5,
+            "electricity_kwh": 153.79,
+            "typical_kwh": 380.76
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 735,
+        "name": "Central Library",
+        "rating": {
+            "current": "C2",
+            "previous": "D1",
+            "indicator": 58.5
+        },
+        "consumption": {
+            "total": 2013,
+            "kgco2_indicator": 60.25,
+            "heating_kwh": 117.67,
+            "electricity_kwh": 158.34
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 1097,
+        "name": "St Catherine's Sports Centre",
+        "rating": {
+            "current": "D2",
+            "previous": "D2",
+            "indicator": 87.5
+        },
+        "consumption": {
+            "total": 1925,
+            "kgco2_indicator": 97.63,
+            "heating_kwh": 449.41,
+            "electricity_kwh": 61.87
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 740,
+        "name": "Cabra Library",
+        "rating": {
+            "current": "C3",
+            "previous": "C1",
+            "indicator": 67
+        },
+        "consumption": {
+            "total": 1860,
+            "kgco2_indicator": 69.32,
+            "heating_kwh": 154.09,
+            "electricity_kwh": 149.01
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 656,
+        "name": "Inchicore Sports Centre",
+        "rating": {
+            "current": "B1",
+            "previous": "B1",
+            "indicator": 25
+        },
+        "consumption": {
+            "total": 1669,
+            "kgco2_indicator": 25.04,
+            "heating_kwh": 99.81,
+            "electricity_kwh": 62.51
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 1495,
+        "name": "Clogher Road Community and Sports Centre",
+        "rating": {
+            "current": "C2",
+            "previous": "C1",
+            "indicator": 58.5
+        },
+        "consumption": {
+            "total": 1497,
+            "kgco2_indicator": 62.21,
+            "heating_kwh": 122.09,
+            "electricity_kwh": 76.75,
+            "typical_kwh": 319.92
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 1205,
+        "name": "Ballybough Community and Sports Centre",
+        "rating": {
+            "current": "B3",
+            "previous": "C1",
+            "indicator": 50
+        },
+        "consumption": {
+            "total": 1495,
+            "kgco2_indicator": 57.12,
+            "heating_kwh": 150.61,
+            "electricity_kwh": 141.47,
+            "typical_kwh": 515.22
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 1196,
+        "name": "Irishtown Sports and Fitness",
+        "rating": {
+            "current": "B1",
+            "previous": "C1",
+            "indicator": 25
+        },
+        "consumption": {
+            "total": 1482,
+            "kgco2_indicator": 25.04,
+            "heating_kwh": 99.81,
+            "electricity_kwh": 62.51,
+            "typical_kwh": 648.82
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 1170,
+        "name": "Markievicz Leisure Centre",
+        "rating": {
+            "current": "E2",
+            "previous": "E2",
+            "indicator": 112.5
+        },
+        "consumption": {
+            "total": 1421,
+            "kgco2_indicator": 120.52,
+            "heating_kwh": 944.18,
+            "electricity_kwh": 465.57,
+            "typical_kwh": 1171.95
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 15,
+        "name": "Phibsboro Fire Station",
+        "rating": {
+            "current": "D2",
+            "previous": "C2",
+            "indicator": 87.5
+        },
+        "consumption": {
+            "total": 1354,
+            "kgco2_indicator": 100.13,
+            "heating_kwh": 299.12,
+            "electricity_kwh": 278.23,
+            "typical_kwh": 585.28
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    },
+    {
+        "id": 13,
+        "name": "North Strand Fire Station",
+        "rating": {
+            "current": "D2",
+            "previous": "D1",
+            "indicator": 87.5
+        },
+        "consumption": {
+            "total": 1100,
+            "kgco2_indicator": 99.97,
+            "heating_kwh": 321.6,
+            "electricity_kwh": 256.27,
+            "typical_kwh": 585.28
+        },
+        "valid_until": new ISODate("2024-05-30T00:00:00Z"),
+        "year": 2023
+    }
+])
+
+## RETURNS TOP 5 KGO2 CONTRIBUTORS
+
+db.energy.aggregate([
+    {
+        $sort: { "consumption.kgco2_indicator": -1 }
+    },
+    {
+        $limit: 5
+    },
+    {
+        $project: {
+            _id: 0,
+            name: 1,
+            kgco2_indicator: "$consumption.kgco2_indicator"
+        }
+    }
+]);
+
+## LISTS LOCATIONS EXCEDING TYPICAL CONSUMPTION, CALCULATES PERCENTAGE
+
+db.energy.aggregate([
+    {
+        $addFields: {
+            percentExcess: {
+                $cond: {
+                    if: { $gt: ["$consumption.total", "$consumption.typical_kwh"] },
+                    then: {
+                        $multiply: [
+                            { $divide: [{ $subtract: ["$consumption.total", "$consumption.typical_kwh"] }, "$consumption.typical_kwh"] },
+                            100
+                        ]
+                    },
+                    else: 0
+                }
+            }
+        }
+    },
+    {
+        $match: { percentExcess: { $gt: 0 } }
+    },
+    {
+        $project: {
+            _id: 0,
+            name: 1,
+            totalConsumption: "$consumption.total",
+            typicalConsumption: "$consumption.typical_kwh",
+            percentExcess: { $round: ["$percentExcess", 2] }
+        }
+    },
+    {
+        $sort: { percentExcess: -1 }
+    }
+]);
+
+## DETERMINES THE OVERALL HEATING AND ELECTRICITY CONTRIBUTION TO CONSUMPTION
+
+db.energy.aggregate([
+    {
+        $group: {
+            _id: null,
+            totalHeating: { $sum: "$consumption.heating_kwh" },
+            totalElectricity: { $sum: "$consumption.electricity_kwh" }
+        }
+    },
+    {
+        $addFields: {
+            totalConsumption: { $add: ["$totalHeating", "$totalElectricity"] },
+            heatingPercentage: {
+                $multiply: [{ $divide: ["$totalHeating", { $add: ["$totalHeating", "$totalElectricity"] }] }, 100]
+            },
+            electricityPercentage: {
+                $multiply: [{ $divide: ["$totalElectricity", { $add: ["$totalHeating", "$totalElectricity"] }] }, 100]
+            }
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            totalHeating: 1,
+            totalElectricity: 1,
+            heatingPercentage: { $round: ["$heatingPercentage", 2] },
+            electricityPercentage: { $round: ["$electricityPercentage", 2] }
+        }
+    }
+]);
+
+
