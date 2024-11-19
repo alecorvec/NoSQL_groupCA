@@ -4,7 +4,7 @@ use groupCA
 
 ## INSERT ENERGY DOCUMENTS
 
-db.energy.insertMany([
+db.energy_recycling.insertMany([
     {
         "id": 852,
         "name": "Civic Offices",
@@ -365,7 +365,7 @@ db.energy.insertMany([
 
 ## RETURNS TOP 5 KGO2 CONTRIBUTORS
 
-db.energy.aggregate([
+db.energy_recycling.aggregate([
     {
         $sort: { "consumption.kgco2_indicator": -1 }
     },
@@ -383,7 +383,7 @@ db.energy.aggregate([
 
 ## LISTS LOCATIONS EXCEDING TYPICAL CONSUMPTION, CALCULATES PERCENTAGE
 
-db.energy.aggregate([
+db.energy_recycling.aggregate([
     {
         $addFields: {
             percentExcess: {
@@ -419,7 +419,7 @@ db.energy.aggregate([
 
 ## DETERMINES THE OVERALL HEATING AND ELECTRICITY CONTRIBUTION TO CONSUMPTION
 
-db.energy.aggregate([
+db.energy_recycling.aggregate([
     {
         $group: {
             _id: null,
